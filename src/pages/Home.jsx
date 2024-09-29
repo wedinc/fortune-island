@@ -3,7 +3,7 @@ import { Image } from "../components/Image";
 import xIcon from "../icons/x.png";
 import { useNavigate } from "react-router-dom";
 
-export default function CorporateLanding() {
+export default function Home() {
   const navigate = useNavigate();
 
   const handleClickAbout = () => {
