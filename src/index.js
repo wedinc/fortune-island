@@ -6,6 +6,13 @@ import Home from "./pages/Home";
 import reportWebVitals from "./reportWebVitals";
 
 const router = createBrowserRouter([
+  //   あなたが指定したいpathを、path: "/example"の部分に指定してください。
+  //   あなたが指定したいコンポーネントを、element: <Example />の部分に指定してください。
+  //   import Example from "./pages/Example";も忘れずに。
+  // 　{
+  //   path: "/example",
+  //   element: <Example />,
+  // 　},
   {
     path: "/",
     element: <Home />,
