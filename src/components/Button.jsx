@@ -1,3 +1,7 @@
+// 各ページで使っているボタンのコンポーネントです！
+// 色: primary, secondary, destructiveを指定すると変更されます
+// サイズ: sm, default, lgを指定すると変更されます
+
 import React from "react";
 
 const Button = ({
