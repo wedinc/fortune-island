@@ -9,7 +9,7 @@ export default function Home() {
   const navigate = useNavigate();
 
   const handleClickAbout = () => {
-    navigate("/about");
+    navigate("/product");
   };
 
   const handleClickNews = () => {
