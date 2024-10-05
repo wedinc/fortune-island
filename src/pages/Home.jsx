@@ -31,9 +31,8 @@ export default function Home() {
           </div>
           <nav>
             <ul className="flex flex-wrap justify-center sm:justify-end space-x-4">
-              {/* TODO: make some page and component */}
               <li>
-                <a href="/home" className="hover:underline">
+                <a href="/" className="hover:underline">
                   ホーム
                 </a>
               </li>
@@ -134,21 +133,20 @@ export default function Home() {
             </h2>
             <div className="space-y-4">
               <div className="flex items-center space-x-4">
-                {/* TODO: make one page */}
                 <span className="text-muted-foreground">2024年3月15日</span>
-                <a href="#" className="hover:underline">
+                <a href="/news/1" className="hover:underline">
                   新AIプラットフォームの開発を発表
                 </a>
               </div>
               <div className="flex items-center space-x-4">
                 <span className="text-muted-foreground">2024年2月1日</span>
-                <a href="#" className="hover:underline">
+                <a href="/news/2" className="hover:underline">
                   年間売上高が過去最高を記録
                 </a>
               </div>
               <div className="flex items-center space-x-4">
                 <span className="text-muted-foreground">2024年1月10日</span>
-                <a href="#" className="hover:underline">
+                <a href="/news/3" className="hover:underline">
                   新たな研究開発センターを東京に開設
                 </a>
               </div>
