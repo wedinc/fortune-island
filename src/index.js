@@ -1,3 +1,5 @@
+// ページを増やした時は、このファイルを編集してください
+
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";

@@ -1,3 +1,5 @@
+// こちらは、一番最初に表示されるページです
+
 import { Button } from "../components/Button";
 import { Image } from "../components/Image";
 import xIcon from "../icons/x.png";
@@ -61,12 +63,13 @@ export default function Home() {
       </header>
 
       <main>
-        <section className="relative h-[1000px]">
+        <section className="relative h-[1441px]">
           <Image
             src="https://i0.wp.com/www.titanui.com/wp-content/uploads/2018/01/25/Artificial-Intelligence-SVG-Icons.png?ssl=1"
             alt="企業イメージ"
             layout="fill"
             width={1920}
+            height={1080}
             objectFit="cover"
             className="brightness-50"
           />
