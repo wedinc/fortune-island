@@ -6,6 +6,14 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import Home from "./pages/Home";
 import reportWebVitals from "./reportWebVitals";
+import Product from "./pages/Product";
+import Company from "./pages/Company";
+import Recruitment from "./pages/Recruitment";
+import Contact from "./pages/Contact";
+import News from "./pages/News";
+import News1 from "./pages/News1";
+import News2 from "./pages/News2";
+import News3 from "./pages/News3";
 
 const router = createBrowserRouter([
   //   あなたが指定したいpathを、path: "/example"の部分に指定してください。
@@ -18,6 +26,38 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+  },
+  {
+    path: "/product",
+    element: <Product />,
+  },
+  {
+    path: "/company",
+    element: <Company />,
+  },
+  {
+    path: "/recruitment",
+    element: <Recruitment />,
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
+  },
+  {
+    path: "/news",
+    element: <News />,
+  },
+  {
+    path: "news/1",
+    element: <News1 />,
+  },
+  {
+    path: "news/2",
+    element: <News2 />,
+  },
+  {
+    path: "news/3",
+    element: <News3 />,
   },
 ]);
 
