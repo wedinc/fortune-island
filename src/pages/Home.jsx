@@ -171,18 +171,17 @@ export default function Home() {
             <h3 className="text-lg font-semibold mb-4">リンク</h3>
             <ul className="space-y-2">
               <li>
-                {/* TODO */}
-                <a href="#" className="hover:underline">
+                <a href="/" className="hover:underline">
                   プライバシーポリシー
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a href="/" className="hover:underline">
                   利用規約
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a href="/" className="hover:underline">
                   サイトマップ
                 </a>
               </li>
