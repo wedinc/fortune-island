@@ -49,15 +49,15 @@ const router = createBrowserRouter([
     element: <News />,
   },
   {
-    path: "news/1",
+    path: "/news/1",
     element: <News1 />,
   },
   {
-    path: "news/2",
+    path: "/news/2",
     element: <News2 />,
   },
   {
-    path: "news/3",
+    path: "/news/3",
     element: <News3 />,
   },
   {
