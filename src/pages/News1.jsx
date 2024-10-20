@@ -78,7 +78,7 @@ export default function News1() {
             objectFit="cover"
             className="brightness-40"
           />
-          <div className="absolute inset-0 flex items-center justify-center relative h-[400px]">
+          <div className="absolute inset-0 flex items-center justify-center relative h-[100px]">
             <div className="text-left text-white">
               <h2 className="text-bold text-center text-4xl relative h-[75px]">
                 猿人類の文明：自然と共生した知的社会の痕跡
@@ -140,7 +140,7 @@ export default function News1() {
             </ul>
           </div>
         </div>
-        <div className="container mx-auto mt-8 text-center">
+        <div className="container mx-auto mt-8 text-center text-white">
           <p>&copy; 2024 株式会社ヒト. All rights reserved.</p>
         </div>
       </footer>

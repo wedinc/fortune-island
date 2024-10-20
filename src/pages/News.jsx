@@ -87,7 +87,7 @@ export default function News() {
             objectFit="cover"
             className="brightness-50"
           />
-          <div className="absolute inset-0 flex items-center justify-center relative h-[300px]">
+          <div className="absolute inset-0 flex items-center justify-center relative h-[0px]">
             <div className="text-left text-white">
               <h2 className="text-3xl font-bold mb-4 relative h-[50px]">
                 {"ニュース一覧"}
@@ -111,19 +111,10 @@ export default function News() {
                     猿人類の知的活動：進化論に新たな光を当てる
                   </a>
                 </div>
-                <p className="text-xl mb-8 font-bold text-white relative h-[100px]"></p>
+                <p className="text-xl mb-8 font-bold text-white relative h-[0px]"></p>
               </div>
             </div>
           </div>
-          <Image
-            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fnatgeo.nikkeibp.co.jp%2Fnng%2Farticle%2F20130312%2F343500%2Fph_thumb.jpg&f=1&nofb=1&ipt=657f96d07408815dbe479fe06127f0c8ff9e8b9ab044bdec76cdf548713d4fcb&ipo=images"
-            alt="ニュース"
-            layout="fill"
-            width={1920}
-            height={1500}
-            objectFit="cover"
-            className="brightness-50"
-          />
         </section>
       </main>
 
@@ -155,7 +146,7 @@ export default function News() {
             </ul>
           </div>
         </div>
-        <div className="container mx-auto mt-8 text-center">
+        <div className="container mx-auto mt-8 text-center text-white">
           <p>&copy; 2024 株式会社ヒト. All rights reserved.</p>
         </div>
       </footer>

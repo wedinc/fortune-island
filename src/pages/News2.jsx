@@ -141,7 +141,7 @@ export default function News1() {
             </ul>
           </div>
         </div>
-        <div className="container mx-auto mt-8 text-center">
+        <div className="container mx-auto mt-8 text-center text-white">
           <p>&copy; 2024 株式会社ヒト. All rights reserved.</p>
         </div>
       </footer>
