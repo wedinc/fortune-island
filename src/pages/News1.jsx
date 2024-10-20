@@ -31,7 +31,7 @@ export default function News1() {
             <p>新作たけのこ味のたけのこの里の開発を発表</p>
             <div className="bg-card text-card-foreground p-6 rounded-lg shadow-md">
               <p>
-                2024年10月20日 –
+                2024年3月15日 –
                 株式会社たけのこは、本日、新作「たけのこ味のたけのこの里」の開発を正式に発表いたしました。
               </p>
               <p>
@@ -75,6 +75,9 @@ export default function News1() {
             </div>
           </div>
         </section>
+        <Button className="mt-8" onClick={() => navigate("/")}>
+          ホームに戻る
+        </Button>
       </main>
     </div>
   );

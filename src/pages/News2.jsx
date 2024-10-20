@@ -32,7 +32,7 @@ export default function News2() {
             <p>年間売上高が過去最高を記録</p>
             <div className="bg-card text-card-foreground p-6 rounded-lg shadow-md">
               <p>
-                2024年10月20日 –
+                2024年2月1日 –
                 株式会社たけのこは、2024年度の年間売上高が過去最高を記録したことを発表しました。
               </p>
               <p>
@@ -52,6 +52,9 @@ export default function News2() {
             </div>
           </div>
         </section>
+        <Button className="mt-8" onClick={() => navigate("/")}>
+          ホームに戻る
+        </Button>
       </main>
     </div>
   );

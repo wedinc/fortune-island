@@ -32,7 +32,7 @@ export default function News3() {
             <p>新たな開発センターを会津若松市に開設</p>
             <div className="bg-card text-card-foreground p-6 rounded-lg shadow-md">
               <p>
-                2024年10月20日 –
+                2024年1月10日 –
                 株式会社たけのこは、福島県会津若松市に新たな開発センターを開設することを発表しました。この開発センターは、たけのこ製品の研究・開発を強化し、さらなる技術革新を推進する拠点となる予定です。
               </p>
 
@@ -65,7 +65,7 @@ export default function News3() {
                   <strong>所在地</strong>：福島県会津若松市〇〇丁目〇〇番地
                 </li>
                 <li>
-                  <strong>開設日</strong>：2024年11月1日
+                  <strong>開設日</strong>：2024年1月10日
                 </li>
               </ul>
               <p>
@@ -74,6 +74,9 @@ export default function News3() {
             </div>
           </div>
         </section>
+        <Button className="mt-8" onClick={() => navigate("/")}>
+          ホームに戻る
+        </Button>
       </main>
     </div>
   );
