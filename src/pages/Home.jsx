@@ -71,20 +71,25 @@ export default function Home() {
             height={1080}
             objectFit="cover"
           />
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="text-center text-black">
-              <h2 className="text-4xl font-bold mb-4">
-                たけのこが未来を創造する
-              </h2>
-              <p className="text-xl mb-8">
-                私たちは、革新的なソリューションで社会に貢献します
-              </p>
-              <Button size="lg" variant="secondary" onClick={handleClickAbout}>
-                詳細はこちら
-              </Button>
-            </div>
-          </div>
         </section>
+
+        <div className="flex items-center justify-center text-center text-black mb-8">
+          <div>
+            <h2 className="text-4xl font-bold mb-8">
+              たけのこが未来を創造する
+            </h2>
+            <p className="text-xl mb-8">
+              私たちは、革新的なソリューションで社会に貢献します
+            </p>
+            <Button
+              className="text-black bg-transparent border border-black text-3xl"
+              variant="secondary"
+              onClick={handleClickAbout}
+            >
+              詳細はこちら
+            </Button>
+          </div>
+        </div>
 
         <section className="py-16">
           <div className="container mx-auto">
