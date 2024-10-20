@@ -76,7 +76,7 @@ export default function Company() {
           <section className="mb-12">
             <h2 className="text-2xl text-amber-950 font-bold mb-4">企業情報</h2>
             <p className="text-lg text-amber-950 mb-4">
-              株式会社ヒトは、常に人類にとっての新しいアイデアを生み続けます。後世をより豊かにしていくために。
+              株式会社ヒトは常に人類にとっての新しいアイデアを生み続けます。後世をより豊かにしていくために。
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
