@@ -2,6 +2,7 @@
 import { Button } from "../components/Button";
 import { Image } from "../components/Image";
 import { useNavigate } from "react-router-dom";
+import xIcon from "../icons/x.png";
 
 export default function Contact() {
   const navigate = useNavigate();
@@ -95,6 +96,47 @@ export default function Contact() {
           </button>
         </form>
       </section>
+
+      <footer className="bg-primary text-primary-foreground py-8 bg-[url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhvy1upasDEdR_NgRK7XvdNfOBJje0ijZveS8WMG3Ggzhovxpd2Xh9ZUAQSSJmRv-mhbeUBZh0hGh2NsaDXGHMKOs4VeInzrwBCJs07Gi8XfkkfFi36t39P8VN8AEzPiSidm_u8Bs_4qJCRcs0ITlx4yGWnPGXzQRjtEykXJOML7iYwi7FWnFMiDfwou_g/s1920/230913b.png')]">
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div>
+            <h3 className="text-lg font-semibold mb-4">株式会社たけのこ</h3>
+            <p>〒555-5555</p>
+            <p>東京都筍区竹の子 5-55-5 ビルタケノコ 2F</p>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold mb-4">リンク</h3>
+            <ul className="space-y-2">
+              <li>
+                <a href="/" className="hover:underline">
+                  プライバシーポリシー
+                </a>
+              </li>
+              <li>
+                <a href="/" className="hover:underline">
+                  利用規約
+                </a>
+              </li>
+              <li>
+                <a href="/map" className="hover:underline">
+                  サイトマップ
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold mb-4">ソーシャルメディア</h3>
+            <div className="flex space-x-4">
+              <a href="https://x.com/wedinc_official" aria-label="x">
+                <Image src={xIcon} alt="x" width={24} height={24} />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="container mx-auto mt-8 text-center">
+          <p>&copy; 2024 株式会社たけのこ. All rights reserved.</p>
+        </div>
+      </footer>
     </>
   );
 }
