@@ -132,7 +132,7 @@ export default function News() {
           <div>
             <h3 className="text-lg font-semibold mb-4">株式会社ヒト</h3>
             <p>〒151-0051</p>
-            <p>東京都渋谷区千駄ヶ谷 4-14-4 SKビル千駄ヶ谷 2F</p>
+            <p>東京都渋谷区千駄ヶ谷 4-14-4 Sビル千駄ヶ谷 2F</p>
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-4">リンク</h3>
