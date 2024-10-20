@@ -185,7 +185,7 @@ export default function Home() {
                 </a>
               </li>
               <li>
-                <a href="/" className="hover:underline">
+                <a href="/map" className="hover:underline">
                   サイトマップ
                 </a>
               </li>
