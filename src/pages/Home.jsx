@@ -27,7 +27,7 @@ export default function Home() {
               width={40}
               height={40}
             />
-            <h1 className="text-2xl font-bold">株式会社〇〇</h1>
+            <h1 className="text-2xl font-bold">株式会社Fortune-island</h1>
           </div>
           <nav>
             <ul className="flex flex-wrap justify-center sm:justify-end space-x-4">
@@ -197,7 +197,7 @@ export default function Home() {
           </div>
         </div>
         <div className="container mx-auto mt-8 text-center">
-          <p>&copy; 2024 株式会社〇〇. All rights reserved.</p>
+          <p>&copy; 2024 株式会社Fortune-island. All rights reserved.</p>
         </div>
       </footer>
     </div>
