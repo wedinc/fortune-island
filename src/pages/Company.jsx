@@ -129,6 +129,8 @@ export default function Company() {
                   height={400}
                 />
               </a>
+
+              <br />
               <br />
               <h3>設立</h3>
               <p>2016年5月26日</p>
