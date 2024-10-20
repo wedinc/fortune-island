@@ -1,45 +1,52 @@
 //こちらは、/contact 会社へのお問い合わせページです。
 
-import { Button } from "../components/Button";
-import { Image } from "../components/Image";
 import { useNavigate } from "react-router-dom";
 
 export default function Contact() {
   const navigate = useNavigate();
 
   return (
-    <form action="" method="get" className="max-w-wd mx-auto mt-8">
-      <div className="text-saddlebrow">
-        <label htmlFor="name">Enter your name: </label>
+    <form action="" method="get" className="max-w-md mx-auto mt-8">
+      {/* 名前の入力フィールド */}
+      <div className="mb-4">
+        <label
+          htmlFor="name"
+          className="saddlebrown text-saddlebrown-700 text-sm font-bold mb-2"
+        >
+          Enter your name:
+        </label>
         <input
           type="text"
           name="name"
           id="name"
-          className="border border-indigo-600"
+          className="shadow appearance-none border border-indigo-600 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
         />
       </div>
-      <div className=".py-2">
-        <label htmlFor="comment">Enter your comment: </label>
+
+      {/* コメントの入力フィールド */}
+      <div className="mb-4">
+        <label
+          htmlFor="comment"
+          className="saddlebrown text-saddlebrown-700 text-sm font-bold mb-2"
+        >
+          Enter your comment:
+        </label>
         <input
           type="text"
           name="comment"
           id="comment"
-          className="border border-indigo-600"
+          className="shadow appearance-none border border-indigo-600 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none"
         />
       </div>
-      <div className="text-saddlebrow">
-        <input
-          type="submit"
-          value="Submit"
-          className="border border-indigo-600"
-        />
-      </div>
+
+      {/* 送信ボタン */}
+      <button
+        class="favorite styled"
+        type="button"
+        className="border border-indigo-600"
+      >
+        submit
+      </button>
     </form>
-    // <input
-    //   className="border border-indigo-600"
-    //   type="text"
-    //   name="name"
-    //   id="name"
-    // />
   );
 }
