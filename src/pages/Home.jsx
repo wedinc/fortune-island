@@ -116,7 +116,7 @@ export default function Home() {
                 </p>
               </div>
               <Button
-                size="lg"
+                className="text-black bg-transparent border border-black text-3xl"
                 variant="secondary"
                 onClick={handleClickMembers}
               >

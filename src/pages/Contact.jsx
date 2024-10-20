@@ -69,20 +69,15 @@ export default function Contact() {
             />
           </div>
 
-<<<<<<< HEAD
-      {/* 送信ボタン */}
-      <button
-        class="favorite styled"
-        type="button"
-        className="text-saddlebrown border border-indigo-600"
-      >
-        submit
-      </button>
-      <Button className="mt-8" onClick={() => navigate("/")}>
-        ホームに戻る
-      </Button>
-    </form>
-=======
+          {/* 送信ボタン */}
+          <button
+            class="favorite styled"
+            type="button"
+            className="text-saddlebrown border border-indigo-600"
+          >
+            submit
+          </button>
+
           {/* コメントの入力フィールド */}
           <div className="mb-4">
             <label
@@ -108,8 +103,10 @@ export default function Contact() {
             submit
           </button>
         </form>
+        <Button className="mt-8" onClick={() => navigate("/")}>
+          ホームに戻る
+        </Button>
       </section>
     </>
->>>>>>> 35ac2b6beeb2da203d854d801c5d2209052528d0
   );
 }
