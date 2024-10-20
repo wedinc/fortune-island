@@ -11,10 +11,10 @@ export default function Recruitment() {
     <div className="text-2xl text-black">
       <h1>私たちのチームに参加しませんか？</h1>
       <p className="mb-8">私たちはたけのこ愛のある人材を探しています。</p>
-      
+
       <p>年収・・・１０００万円</p>
       <p className="mb-8">職種・・・製造、販売</p>
-      
+
       <h1 className="container mx-auto text-center">面接情報</h1>
       <p className="container mx-auto text-center">
         面接プロセス：
@@ -25,7 +25,6 @@ export default function Recruitment() {
           <li>⚠️きのこ派閥の方は応募できません⚠️</li>
         </ol>
       </p>
-      
     </div>
   );
 }
