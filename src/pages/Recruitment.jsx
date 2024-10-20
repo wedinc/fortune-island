@@ -1,11 +1,15 @@
 // こちらは、/recruitment 採用活動ページです
 
-// import { Button } from "../components/Button";
-// import { Image } from "../components/Image";
-// import { useNavigate } from "react-router-dom";
+import { Button } from "../components/Button";
+import { Image } from "../components/Image";
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 export default function Recruitment() {
   // const navigate = useNavigate();
+
+  const [count, setCount] = useState(0);
+  const [count1, setCount1] = useState(0);
 
   return (
     <div className="text-2xl text-black">
@@ -24,6 +28,14 @@ export default function Recruitment() {
           <li>最終面接（対面またはオンライン）</li>
           <li>⚠️きのこ派閥の方は応募できません⚠️</li>
         </ol>
+      </p>
+      <p className="container mx-auto text-center">
+        <p onClick={() => setCount(count + 1)} className="cursor-pointer">
+          🍄 {count}
+        </p>
+        <p onClick={() => setCount1(count1 + 1)} className="cursor-pointer">
+          🎍 {count1}
+        </p>
       </p>
     </div>
   );
