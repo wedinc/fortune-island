@@ -11,10 +11,22 @@ export default function Product() {
   return (
     <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center">
       <h1 className="text-2xl font-bold">たけのこの里</h1>
-      <Image src="https://yomerunet.com/wp-content/uploads/2021/11/%E3%81%9F%E3%81%91%E3%81%AE%E3%81%93%E3%81%AE%E9%87%8C.jpg" />
-      <p className="font-bold">
+      <p>
+        <Image src="https://yomerunet.com/wp-content/uploads/2021/11/%E3%81%9F%E3%81%91%E3%81%AE%E3%81%93%E3%81%AE%E9%87%8C.jpg" />
+      </p>
+      <p className="font-bold mb-8">
         チョコとクッキーのおいしいコラボレーション
       </p>
+      <p>
+        <h2 className="text-2xl font-bold">たけのこの里マグカップ</h2>
+      </p>
+      <p>
+        <Image
+          src="https://videopalace.net/od/wp-content/uploads/2019/04/190214bamboomug_00.jpg"
+          width={350}
+        />
+      </p>
+      <p className="font-bold">竹の風味を楽しめるマグカップ</p>
     </div>
   );
 }
