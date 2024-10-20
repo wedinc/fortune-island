@@ -6,11 +6,14 @@ import (
 
 type User struct{
 	gorm.Model
-	UserModel UserModel
+	Name string `json:"name"`
+	Email string `json:"email"`
+	Password string `json:"password"`
 }
 
-type UserModel struct{
-	Name string
-	Email string
-	Password string
+type News struct {
+	gorm.Model
+	UserID uint `json:"userid"`
+	Title string `json:"title"`
+	Description string `json:"description"`
 }
