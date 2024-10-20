@@ -55,6 +55,21 @@ export default function Home() {
                   会社概要
                 </a>
               </li>
+
+              <li>
+                    <a
+                      href="/Members"
+                      className="bg-card text-card-foreground p-4 rounded-lg shadow-md hover:underline text-amber-950"
+                    >
+                      従業員
+                    </a>
+                  </li>
+
+
+
+
+
+
               <li>
                 <a
                   href="/recruitment"
