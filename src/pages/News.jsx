@@ -94,21 +94,21 @@ export default function News() {
               </h2>
               <div className="space-y-4">
                 <div className="flex items-center space-x-4">
-                  <span className="text-muted-foreground">2024年3月15日</span>
+                  <span className="text-muted-foreground">2024年10月20日</span>
                   <a href="/news/1" className="hover:underline">
-                    新AIプラットフォームの開発を発表
+                    猿人類の文明：自然と共生した知的社会の痕跡
                   </a>
                 </div>
                 <div className="flex items-center space-x-4">
-                  <span className="text-muted-foreground">2024年2月1日</span>
+                  <span className="text-muted-foreground">2024年10月20日</span>
                   <a href="/news/2" className="hover:underline">
-                    年間売上高が過去最高を記録
+                    猿人類の文明：進化の証拠が人類史を書き換える
                   </a>
                 </div>
                 <div className="flex items-center space-x-4">
-                  <span className="text-muted-foreground">2024年1月10日</span>
+                  <span className="text-muted-foreground">2024年10月20日</span>
                   <a href="/news/3" className="hover:underline">
-                    新たな研究開発センターを東京に開設
+                    猿人類の知的活動：進化論に新たな光を当てる
                   </a>
                 </div>
                 <p className="text-xl mb-8 font-bold text-white relative h-[100px]"></p>
