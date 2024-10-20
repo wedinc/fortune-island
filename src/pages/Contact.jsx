@@ -1,5 +1,6 @@
 //こちらは、/contact 会社へのお問い合わせページです。
-
+import { Button } from "../components/Button";
+import { Image } from "../components/Image";
 import { useNavigate } from "react-router-dom";
 
 export default function Contact() {
@@ -11,7 +12,7 @@ export default function Contact() {
       <div className="mb-4">
         <label
           htmlFor="name"
-          className="saddlebrown text-saddlebrown-700 text-sm font-bold mb-2"
+          className="text-saddlebrown text-saddlebrown-700 text-sm font-bold mb-2"
         >
           Enter your name:
         </label>
@@ -19,7 +20,7 @@ export default function Contact() {
           type="text"
           name="name"
           id="name"
-          className="shadow appearance-none border border-indigo-600 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          className="appearance-none border border-indigo-600 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
         />
       </div>
 
@@ -27,7 +28,7 @@ export default function Contact() {
       <div className="mb-4">
         <label
           htmlFor="comment"
-          className="saddlebrown text-saddlebrown-700 text-sm font-bold mb-2"
+          className="saddlebrown text-saddlebrown saddlebrown text-saddlebrown-700 text-sm font-bold mb-2"
         >
           Enter your comment:
         </label>
@@ -35,7 +36,7 @@ export default function Contact() {
           type="text"
           name="comment"
           id="comment"
-          className="shadow appearance-none border border-indigo-600 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none"
+          className="saddlebrown shadow appearance-none border border-indigo-600 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none"
         />
       </div>
 
@@ -43,7 +44,7 @@ export default function Contact() {
       <button
         class="favorite styled"
         type="button"
-        className="border border-indigo-600"
+        className="text-saddlebrown border border-indigo-600"
       >
         submit
       </button>
