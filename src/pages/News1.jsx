@@ -17,9 +17,9 @@ export default function News1() {
               src="https://wed.company/img/wed.svg"
               alt="企業ロゴ"
               width={40}
-              height={40}
+              height={60}
             />
-            <h1 className="text-2xl font-bold">株式会社〇〇</h1>
+            <h1 className="text-2xl font-bold">株式会社HalloWork</h1>
           </div>
           <nav>
             <ul className="flex flex-wrap justify-center sm:justify-end space-x-4">
@@ -59,7 +59,7 @@ export default function News1() {
           2024年3月15日
         </span>
         <p className="ml-3 w-11/12">
-          表題の通り、我々は社名を変更いたしました。新しい名前は「株式会社hallowork」となりました、日々精進いたします。つきましては、今後とぞよろしくお願いたします。
+          表題の通り、我々は社名を変更いたしました。新しい名前は「株式会社Hallowork」となりました、日々精進いたします。つきましては、今後とぞよろしくお願いたします。
         </p>
         <a className="ml-3 mt-3 text-xs hover:opacity-30" href="/news">
           ニュース一覧に戻る

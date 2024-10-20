@@ -17,9 +17,9 @@ export default function News2() {
               src="https://wed.company/img/wed.svg"
               alt="企業ロゴ"
               width={40}
-              height={40}
+              height={60}
             />
-            <h1 className="text-2xl font-bold">株式会社〇〇</h1>
+            <h1 className="text-2xl font-bold">株式会社HalloWork</h1>
           </div>
           <nav>
             <ul className="flex flex-wrap justify-center sm:justify-end space-x-4">
@@ -52,6 +52,7 @@ export default function News2() {
           </nav>
         </div>
       </header>
+
       <div className="article p-10 m-auto">
         <h1 className="text-3xl p-3 text-center">社員退社のお知らせ</h1>
         <span className="text-muted-foreground ml-3 text-sm">2024年2月1日</span>

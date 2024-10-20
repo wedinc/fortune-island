@@ -17,9 +17,9 @@ export default function News() {
               src="https://wed.company/img/wed.svg"
               alt="企業ロゴ"
               width={40}
-              height={40}
+              height={60}
             />
-            <h1 className="text-2xl font-bold">株式会社〇〇</h1>
+            <h1 className="text-2xl font-bold">株式会社HalloWork</h1>
           </div>
           <nav>
             <ul className="flex flex-wrap justify-center sm:justify-end space-x-4">
