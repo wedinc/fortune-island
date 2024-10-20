@@ -12,7 +12,7 @@ export default function Company() {
         <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center">
           <div className="flex items-center space-x-2 mb-4 sm:mb-0">
             <Image
-              src="https://yomerunet.com/wp-content/uploads/2021/11/%E3%81%9F%E3%81%91%E3%81%AE%E3%81%93%E3%81%AE%E9%87%8C.jpg"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYycfBzgZCCzh0yvSxj3Cc6sz7Cp_VZggsrw&s"
               alt="企業ロゴ"
               width={80}
               height={80}
