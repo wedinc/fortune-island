@@ -17,42 +17,57 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-amber-100 text-foreground">
       <header className="bg-primary text-primary-foreground p-4">
         <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center">
           <div className="flex items-center space-x-2 mb-4 sm:mb-0">
             <Image
-              src="https://wed.company/img/wed.svg"
+              src="https://png.pngtree.com/png-vector/20240416/ourmid/pngtree-gorilla-hand-with-index-finger-pointing-isolated-on-white-background-png-image_12290189.png"
               alt="企業ロゴ"
               width={40}
               height={40}
             />
-            <h1 className="text-2xl font-bold">株式会社〇〇</h1>
+            <h1 className="text-2xl text-amber-950 font-bold">株式会社ヒト</h1>
           </div>
           <nav>
-            <ul className="flex flex-wrap justify-center sm:justify-end space-x-4">
+            <ul className="flex flex-wrap justify-center space-x-4">
               <li>
-                <a href="/" className="hover:underline">
+                <a
+                  href="/"
+                  className="bg-card text-card-foreground p-4 rounded-lg shadow-md hover:underline text-amber-950"
+                >
                   ホーム
                 </a>
               </li>
               <li>
-                <a href="/product" className="hover:underline">
+                <a
+                  href="/product"
+                  className="bg-card text-card-foreground p-4 rounded-lg shadow-md hover:underline text-amber-950"
+                >
                   事業内容
                 </a>
               </li>
               <li>
-                <a href="/company" className="hover:underline">
+                <a
+                  href="/company"
+                  className="bg-card text-card-foreground p-4 rounded-lg shadow-md hover:underline text-amber-950"
+                >
                   会社概要
                 </a>
               </li>
               <li>
-                <a href="/recruitment" className="hover:underline">
+                <a
+                  href="/recruitment"
+                  className="bg-card text-card-foreground p-4 rounded-lg shadow-md hover:underline text-amber-950"
+                >
                   採用情報
                 </a>
               </li>
               <li>
-                <a href="/contact" className="hover:underline">
+                <a
+                  href="/contact"
+                  className="bg-card text-card-foreground p-4 rounded-lg shadow-md hover:underline text-amber-950"
+                >
                   お問い合わせ
                 </a>
               </li>
@@ -64,7 +79,7 @@ export default function Home() {
       <main>
         <section className="relative h-[1441px]">
           <Image
-            src="https://i0.wp.com/www.titanui.com/wp-content/uploads/2018/01/25/Artificial-Intelligence-SVG-Icons.png?ssl=1"
+            src="https://img.freepik.com/free-photo/funny-old-woman-with-monkey_23-2151058755.jpg"
             alt="企業イメージ"
             layout="fill"
             width={1920}
@@ -74,11 +89,18 @@ export default function Home() {
           />
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="text-center text-white">
-              <h2 className="text-4xl font-bold mb-4">技術で未来を創造する</h2>
+              <h2 className="text-4xl font-bold mb-4">
+                類人猿にヒューマンレベルを
+              </h2>
               <p className="text-xl mb-8">
-                私たちは、革新的なソリューションで社会に貢献します
+                私達は新人類を生み出し社会に貢献させます
               </p>
-              <Button size="lg" variant="secondary" onClick={handleClickAbout}>
+              <Button
+                size="lg"
+                className="hover:underline"
+                variant="secondary"
+                onClick={handleClickAbout}
+              >
                 詳細はこちら
               </Button>
             </div>
@@ -90,21 +112,19 @@ export default function Home() {
             <h2 className="text-3xl font-bold mb-8 text-center">事業内容</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-card text-card-foreground p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-semibold mb-2">システム開発</h3>
+                <h3 className="text-xl font-semibold mb-2">類人猿研究</h3>
                 <p>
-                  最新技術を活用した、高品質なシステム開発サービスを提供します。
+                  類人猿の現在の思考力を解析しさらなる成長に繋がる研究をします。
                 </p>
               </div>
               <div className="bg-card text-card-foreground p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-semibold mb-2">AIソリューション</h3>
-                <p>
-                  機械学習と深層学習を用いた、革新的なAIソリューションを開発します。
-                </p>
+                <h3 className="text-xl font-semibold mb-2">AI進化</h3>
+                <p>マイクロチップを脳に埋め込み思考力判断力を補助します。</p>
               </div>
               <div className="bg-card text-card-foreground p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-semibold mb-2">クラウドサービス</h3>
+                <h3 className="text-xl font-semibold mb-2">徹底した教育</h3>
                 <p>
-                  安全で効率的なクラウドインフラストラクチャを構築・運用します。
+                  人類、類人猿共双方にとっての安全性を守るための教育をします。
                 </p>
               </div>
             </div>
@@ -115,9 +135,7 @@ export default function Home() {
           <div className="container mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center">企業理念</h2>
             <div className="text-center max-w-2xl mx-auto">
-              <p className="text-xl mb-4">
-                「技術を通じて、より良い社会の実現に貢献する」
-              </p>
+              <p className="text-xl mb-4">「新たな労働力で、よりよい社会へ」</p>
               <p className="mb-4">
                 私たちは、最先端の技術と創造力を駆使し、社会の課題解決に取り組みます。
                 持続可能な未来の創造に向けて、常に挑戦し続けます。
@@ -163,9 +181,9 @@ export default function Home() {
       <footer className="bg-primary text-primary-foreground py-8">
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-lg font-semibold mb-4">株式会社〇〇</h3>
-            <p>〒151-0051</p>
-            <p>東京都渋谷区千駄ヶ谷 4-14-4 SKビル千駄ヶ谷 2F</p>
+            <h3 className="text-lg font-semibold mb-4">株式会社ヒト</h3>
+            <p>〒851-1315</p>
+            <p>長崎県長崎市高島町端島</p>
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-4">リンク</h3>
@@ -197,7 +215,7 @@ export default function Home() {
           </div>
         </div>
         <div className="container mx-auto mt-8 text-center">
-          <p>&copy; 2024 株式会社〇〇. All rights reserved.</p>
+          <p>&copy; 2024 株式会社ヒト. All rights reserved.</p>
         </div>
       </footer>
     </div>
