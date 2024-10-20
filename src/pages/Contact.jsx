@@ -48,6 +48,9 @@ export default function Contact() {
       >
         submit
       </button>
+      <Button className="mt-8" onClick={() => navigate("/")}>
+        ホームに戻る
+      </Button>
     </form>
   );
 }

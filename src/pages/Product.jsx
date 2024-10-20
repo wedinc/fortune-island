@@ -27,6 +27,9 @@ export default function Product() {
         />
       </p>
       <p className="font-bold">竹の風味を楽しめるマグカップ</p>
+      <Button className="mt-8" onClick={() => navigate("/")}>
+        ホームに戻る
+      </Button>
     </div>
   );
 }

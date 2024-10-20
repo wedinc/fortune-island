@@ -37,6 +37,9 @@ export default function Recruitment() {
           🎍 {count1}
         </p>
       </p>
+      <Button className="mt-8" onClick={() => navigate("/")}>
+        ホームに戻る
+      </Button>
     </div>
   );
 }

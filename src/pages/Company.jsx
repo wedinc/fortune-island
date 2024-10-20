@@ -87,6 +87,9 @@ export default function Company() {
           </div>
         </section>
       </main>
+      <Button className="mt-8" onClick={() => navigate("/")}>
+        ホームに戻る
+      </Button>
     </div>
   );
 }
