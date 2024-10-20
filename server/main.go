@@ -12,6 +12,7 @@ import (
 	"github.com/joho/godotenv"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
+	"github.com/labstack/echo/v4/middleware"
 )
 
 var db *gorm.DB
@@ -41,6 +42,12 @@ func main() {
 	db.AutoMigrate(&model.User{})
 
 	e := echo.New()
+
+ e.Use(middleware.CORSWithConfig(middleware.CORSConfig{
+        AllowOrigins: []string{"http://localhost:3000"}, // ReactアプリケーションのURL
+        AllowMethods: []string{echo.GET, echo.POST, echo.PUT, echo.DELETE},
+    }))
+
 	routing(e)
 
 	if err := e.Start(":8080"); err != nil {
@@ -103,26 +110,46 @@ func getUser(c echo.Context) error {//完成
 	return c.JSON(http.StatusOK, user)
 }
 
+func get(c echo.Context, id uint) error {//完成
+
+	var user model.User
+	result := db.First(&user, id)
+
+	if result.Error != nil {
+		return c.String(http.StatusNotFound, "Not exist the user having the id. or etc")
+	}
+
+	return c.JSON(http.StatusOK, user)
+}
+
 ///
 
-func createUser(c echo.Context) error { //完成
-	name := c.FormValue("name")
-	email := c.FormValue("email")
-	password := c.FormValue("password")
+func createUser(c echo.Context) error {
+    log.Println("Received a request to create user")
 
-	user := model.User{
-		Name:     name,
-		Email:    email,
-		Password: password,
-	}
+    name := c.FormValue("name")
+    email := c.FormValue("email")
+    password := c.FormValue("password")
 
-	err := createUserToDataBase(user)
-	if err != nil {
-		return c.String(http.StatusInternalServerError, "Failed to create user")
-	}
+    log.Printf("User details: Name=%s, Email=%s, Password=%s\n", name, email, password)
 
-	return c.String(http.StatusOK, "User created successfully")
+    user := model.User{
+        Name:     name,
+        Email:    email,
+        Password: password,
+    }
+
+    err := createUserToDataBase(user)
+    if err != nil {
+        log.Println("Error creating user:", err)
+        return c.String(http.StatusInternalServerError, "Failed to create user")
+    }
+
+    log.Println("User created successfully")
+    get(c, user.Model.ID)
+    return c.String(http.StatusOK, "User created successfully")
 }
+
 
 func createUserToDataBase(user model.User) error { // 完成
 	return db.Create(&user).Error
