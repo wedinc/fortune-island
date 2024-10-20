@@ -16,6 +16,10 @@ export default function Home() {
     navigate("/news");
   };
 
+  const handleClickMembers = () => {
+    navigate("/members");
+  };
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       <header className="bg-primary text-primary-foreground p-4">
@@ -111,6 +115,13 @@ export default function Home() {
                   安全で効率的なたけのこクラウドインフラストラクチャを構築・運用します。
                 </p>
               </div>
+              <Button
+                size="lg"
+                variant="secondary"
+                onClick={handleClickMembers}
+              >
+                社員紹介
+              </Button>
             </div>
           </div>
         </section>
@@ -164,7 +175,9 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="bg-primary text-primary-foreground py-8">
+      {/* フッター */}
+
+      <footer className="bg-primary text-primary-foreground py-8 bg-[url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhvy1upasDEdR_NgRK7XvdNfOBJje0ijZveS8WMG3Ggzhovxpd2Xh9ZUAQSSJmRv-mhbeUBZh0hGh2NsaDXGHMKOs4VeInzrwBCJs07Gi8XfkkfFi36t39P8VN8AEzPiSidm_u8Bs_4qJCRcs0ITlx4yGWnPGXzQRjtEykXJOML7iYwi7FWnFMiDfwou_g/s1920/230913b.png')]">
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-lg font-semibold mb-4">株式会社たけのこ</h3>
@@ -185,7 +198,7 @@ export default function Home() {
                 </a>
               </li>
               <li>
-                <a href="/" className="hover:underline">
+                <a href="/map" className="hover:underline">
                   サイトマップ
                 </a>
               </li>
