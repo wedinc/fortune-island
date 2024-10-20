@@ -25,9 +25,9 @@ export default function Home() {
               src="https://wed.company/img/wed.svg"
               alt="企業ロゴ"
               width={40}
-              height={40}
+              height={60}
             />
-            <h1 className="text-2xl font-bold">株式会社〇〇</h1>
+            <h1 className="text-2xl font-bold">株式会社HalloWork</h1>
           </div>
           <nav>
             <ul className="flex flex-wrap justify-center sm:justify-end space-x-4">
@@ -64,22 +64,26 @@ export default function Home() {
       <main>
         <section className="relative h-[1441px]">
           <Image
-            src="https://i0.wp.com/www.titanui.com/wp-content/uploads/2018/01/25/Artificial-Intelligence-SVG-Icons.png?ssl=1"
+            src="https://sakuranouta.biz/wp-content/uploads/2023/10/%E3%82%AA%E3%83%95%E3%82%A3%E3%82%B9_1_%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-1.jpg"
             alt="企業イメージ"
             layout="fill"
             width={1920}
-            height={1080}
+            height={2180}
             objectFit="cover"
             className="brightness-50"
           />
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="text-center text-white">
-              <h2 className="text-4xl font-bold mb-4">技術で未来を創造する</h2>
+              <h2 className="text-4xl font-bold mb-4">
+                あなたにあった求人先を
+              </h2>
               <p className="text-xl mb-8">
-                私たちは、革新的なソリューションで社会に貢献します
+                私たちは、あなたに寄り添って、あなたの人生に貢献します
               </p>
               <Button size="lg" variant="secondary" onClick={handleClickAbout}>
-                詳細はこちら
+                <a href="https://u-aizu.ac.jp" className="hover:underline">
+                  詳細はこちら
+                </a>
               </Button>
             </div>
           </div>
