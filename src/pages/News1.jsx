@@ -68,7 +68,7 @@ export default function News1() {
       <footer className="bg-primary text-primary-foreground py-8">
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-lg font-semibold mb-4">株式会社〇〇</h3>
+            <h3 className="text-lg font-semibold mb-4">株式会社HalloWork</h3>
             <p>〒151-0051</p>
             <p>東京都渋谷区千駄ヶ谷 4-14-4 SKビル千駄ヶ谷 2F</p>
           </div>
@@ -102,7 +102,7 @@ export default function News1() {
           </div>
         </div>
         <div className="container mx-auto mt-8 text-center">
-          <p>&copy; 2024 株式会社〇〇. All rights reserved.</p>
+          <p>&copy; 2024 株式会社HalloWork. All rights reserved.</p>
         </div>
       </footer>
     </div>
